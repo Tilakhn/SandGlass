@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_marginTop="200dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="horizontal">
+
+       <TextView
+           android:text="00"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="30sp"
+           android:gravity="center"
+            android:id="@+id/hour"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:background="@drawable/round_back_black10_10"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:text=":"
+           android:textColor="#FFFFFF"
+           android:textStyle="bold"
+           android:textSize="30sp"/>
+       <TextView
+           android:text="00"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="30sp"
+           android:gravity="center"
+           android:id="@+id/min"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:background="@drawable/round_back_black10_10"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:text=":"
+           android:textColor="#FFFFFF"
+           android:textStyle="bold"
+           android:textSize="30sp"/>
+       <TextView
+           android:text="00"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="30sp"
+           android:gravity="center"
+           android:id="@+id/sec"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:background="@drawable/round_back_black10_10"/>
+
+   </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_alignBottom="@+id/startBtn"
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:background="@color/secondary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:background="@color/secondary"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
